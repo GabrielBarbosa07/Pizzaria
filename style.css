@@ -1,0 +1,293 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    text-align: center;
+    padding: 40px 10px;
+    font-family: sans-serif;
+    color: rgb(20, 20, 20);
+    margin: auto;
+}
+section>p{
+    font-family:'Sarabun', sans-serif; ;
+}
+.imgp{
+    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)100%) ,url(img/pizza-principal.jpg);
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 810px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 12px black;
+}
+.imgp>.titulo{
+    margin-bottom: 200px;
+}
+.imgp>.titulo>h1{
+    color: #FFA500;
+    font-family: 'Courgette', sans-serif;;
+    font-size: 4.2em;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 2px black;
+}
+.imgp>.titulo>p{
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.6em;
+}
+/*Primeira parte*/
+
+.midia1{
+    max-width: 1500px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    margin: 150px auto 200px auto;
+    
+}
+.item1{
+    width: 350px;
+    position: relative;
+}
+.item1:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right:10px;
+    padding-left: 8px;
+}
+.item1:nth-child(2){
+    background-image: url(img/apresentaçao-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-radius: 13px;
+    width: 35%;
+    height:100%;
+    margin-right: 25px;
+    max-width: 400px;
+}
+.item1:nth-child(3){
+    background-image:linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)100%), url(img/apresentaçao-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 13px;
+    width: 35%;
+    height: 100%;
+    max-width: 400px;
+}
+.item1>h1{
+    font-family:'Arimo', sans-serif;
+    color: #FFA500;
+    text-align: left;
+    font-size: 2.8em;
+}
+.item1>h2{
+    position: absolute;
+    top:75%;
+    left: 30%;
+    color: white;
+    font-size: 40px;
+}
+.item1>h3{
+    color: rgba(0, 0, 0, 0.548);
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 14px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.item1>p{
+    text-align: justify;
+    font-size: 16px;
+    padding: 12px 12px 12px 0px;
+    font-family: 'Sarabun', sans-serif;;
+    line-height: 24px;
+}
+.item1>.p1{
+    position: absolute;
+    top:83%;
+    left: 15%;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    padding: 2px 10px;
+}
+@media (max-width:1100px){
+    .item1>h2{
+        position: absolute;
+        top:75%;
+        left: 24%;
+        color: white;
+        font-size: 40px;
+    }
+    .item1>.p1{
+        position: absolute;
+        top:83%;
+        left: 7%;
+        color: white;
+        font-size: 17px;
+        text-align: center;
+        padding: 2px 10px;
+    }
+}
+.item1>button{
+    padding: 10px;
+    width: 120px;
+    background-color: #FFA500;
+    border: none;
+    border-radius: 10px;
+}
+.item1>button:hover{
+    background-color: #424242;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.item1>button>a{
+    text-decoration: none;
+    color: white;
+    background-color: none;
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+.item1>button>a:hover{
+    text-decoration: underline;
+}
+.item1>img{
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+    opacity: 90%;
+}
+/*Segunda sessao*/
+
+.sub-midia{
+    margin-top: 80px;
+    text-align: center;
+}
+.sub-midia>h1{
+    font-size: 2.8em;
+    font-family: 'Sansita Swashed', sans-serif;
+    padding: 11px;
+    color: rgba(0, 0, 0, 0.726);
+}
+.sub-midia>p{
+    font-family:'Sarabun', sans-serif;
+    font-size: 19px; 
+}
+.midia2{
+    margin-bottom: 0px;
+    display: flex;
+    max-width: 1300px;
+    justify-content: space-between;
+}
+.item2{
+    flex-direction: column;
+    width: 300px;
+    margin: 0 10px 0px 0px;
+}
+.img-c>img{
+    max-width:100%;
+    border-radius: 12px;
+}
+.img-c{
+    max-width: 300px;
+}
+.midia2>button{
+    position: relative;
+    margin-top: 50pmx;
+    left: 47%;
+}
+.sub-item{
+    padding-top: 8px;
+}
+.sub-item>a{
+    color: #FFA500;
+    text-decoration: none;
+}
+.sub-item>a:hover{
+    text-decoration: underline;
+}
+.sub-item>p{
+    padding-top: 7px;
+}
+.btn-midia2{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.btn-midia2-item{
+    background-color: #FFA500;
+    padding: 10px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+}
+.btn-midia2-item:hover{
+    text-decoration: underline;
+    background-color: #424242;
+    transition: .5s;
+}
+.btn-midia2-item>a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+/* Terceira sessao*/
+.midia3{
+    background-image:linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)100%) ,url(img/pizza-principal-3.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    border-top-left-radius: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 1px 1px 14px black;
+}
+.midia3>.item3>h1{
+    font-size: 3.2em;
+    margin-bottom: 10px;
+}
+.midia3>.item3>p{
+    font-size: 1.3em;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.btn-midia3-item{
+    background-color: #FFA500;
+    padding: 10px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+}
+.btn-midia3-item:hover{
+    text-decoration: underline;
+    background-color: #424242;
+    transition: .5s;
+}
+.btn-midia3-item>a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+
