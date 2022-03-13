@@ -8,49 +8,54 @@
     padding:0;
     box-sizing: border-box;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/*Cabeçalho*/
+nav{
+    display: block;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.993);
     height: 80px;
 }
-.head-logo{
-    width: 110px;
+.logo{
+    width: auto;
     height: 80px;
 }
-.head-logo>img{
+.logo>img{
     height:100%;
-    width: 100%;
+    width: auto;
 }
-ul{
-    position: relative;
-    display: flex;
+nav>ul{
+    display: block;
+    float: right;
+    line-height: 80px;
+}
+nav ul li{
+    display: inline-block;
     list-style: none;
 }
 ul>li>a{
     padding: 5px 8px;
-    margin-left: 13px;
+    margin-left: 10px;
     text-decoration: none;
     color:#ffa600;
-    font-size: 21px;
+    font-size: 23px;
     font-weight: normal;
 }
 ul>li>a:hover{
     text-decoration: underline;
 }
 #check{
-    display: block;
-    
+    display: none;
 }
 .btn-check{
     position: relative;
     color: #FFA500;
-    font-size: 27px;
+    font-size: 30px;
     margin-right: 20px;
-    display: block;
-    right: 0%;
+    float: right;
+    line-height: 80px;
+    right: 100%;
 }
+/*Background principal*/
 section{
     width: 100%;
     text-align: center;
@@ -64,16 +69,17 @@ section>p{
 }
 .imgp{
     background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)100%) ,url(img/pizza-principal.jpg);
-    height: 820px;
+    height: 840px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    max-height: 835px;
+    max-height: 855px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 12px black;
+    padding-top: 0px;
 }
 
 .imgp>.titulo{
@@ -91,7 +97,7 @@ section>p{
     font-family: 'Sarabun', sans-serif;
     font-size: 1.6em;
 }
-/*Primeira parte*/
+/*Primeira sessao*/
 
 .midia1{
     max-width: 1500px;
@@ -99,7 +105,6 @@ section>p{
     display: flex;
     justify-content: center;
     margin: 150px auto 200px auto;
-    
 }
 .item1{
     width: 350px;
@@ -187,7 +192,6 @@ section>p{
     background-color: none;
     font-size: 17px;
     font-weight: bold;
-    
 }
 .item1>button>a:hover{
     text-decoration: underline;
@@ -414,41 +418,43 @@ footer{
 }
 @media (max-width:920px){
     /*Cabeçalho*/
-
-    header>ul{
-        position: fixed;
+    nav>.logo{
+        float: right;
+        margin-right: 5px;
+    }
+    nav>ul{
+        position:absolute;
+        right: 100%;
         width: 100%;
-        right: 700px;
-        display: block;
         transition: .5s all;
         background-color: black;
         top: 80px;
     }
-    header>ul>li{
-        line-height: 50px;
-        
+    nav>ul>li{
+        display: block;
+        text-align: center;
+        line-height: 53px;
     }
-    header>ul>li>a{
-        padding-left: 20px;
-        font-size: 2em;
+    nav>ul>li>a{
         color: white;
+        font-size: 2em;
         font-weight: bold;
-        
     }
-    header>ul>li>a:hover{
-        color: rgb(211, 205, 205);
-        transition: .5s all;
+    nav>ul>li>a:hover{
+        color: rgba(211, 205, 205, 0.856);
     }
     .btn-check{
         display: block;
-        margin-left: 10px;
+        left: 0%;
+        float: left;
+        margin-left: 20px;
     }
     .btn-check:hover{
         cursor: pointer;
     }
     #check:checked ~ ul{
         right: 0px;
-        top: 500px;
+        display: inline;
     }
     /*Sessao 1 */
     .midia1{
